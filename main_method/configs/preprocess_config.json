@@ -1,0 +1,8 @@
+{
+  "preset_csv_dir": "example_data/preset_gestures/all",
+  "custom_csv_dir": "example_data/custom_gestures",
+  "output_dir": "processed",
+  "target_length": 180,
+  "include_preset": true,
+  "include_custom": true
+}
