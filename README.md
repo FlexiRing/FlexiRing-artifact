@@ -1,10 +1,10 @@
 # Gesture Recognition Pre-Acceptance Release
 
-This package is a runnable pre-acceptance release. It provides example gesture
-data, data preprocessing utilities, a few-shot evaluation script, resource
-files, an Apple component package, and a DTW reference implementation. The
-complete implementation and paper-aligned experiment runners will be released
-after paper acceptance.
+This package is a runnable pre-acceptance release. It provides the full
+anonymized dataset, firmware code, example gesture data, data preprocessing
+utilities, a few-shot evaluation script, Apple component resources, and a DTW
+reference implementation. The complete implementation and paper-aligned
+experiment runners will be released after paper acceptance.
 
 ## Structure
 
@@ -31,6 +31,11 @@ gesture_open_source_release/
     dtw_core.py
     example.py
     README.md
+  data/
+    custom_gestures/
+    preset_gestures/
+  firmware/
+    tflite-customer/
 ```
 
 ## Components
@@ -45,6 +50,10 @@ gesture_open_source_release/
 - `dtw_core/`: lightweight Dynamic Time Warping reference implementation for
   template-based gesture recognition. It is self-contained and documented in
   its own README.
+- `data/`: full anonymized dataset used by this release. It includes
+  `custom_gestures/` and `preset_gestures/`.
+- `firmware/`: embedded firmware source package for Apollo3-based deployment
+  (`tflite-customer`).
 
 ## Quick Checks
 
@@ -70,15 +79,17 @@ python apple_component/run_fixed_manifest_baselines.py --shots 1 --max-epochs 1 
 python dtw_core/example.py
 ```
 
-The bundled data is intentionally small so that users can verify file formats
-and command-line entry points before replacing it with their own CSV data.
+The package includes both full anonymized data (`data/`) and bundled
+small-scale example data (`main_method/example_data` and
+`apple_component/example_data`) for quick smoke tests.
 
 ## Release Scope
 
-- Included now: example preset/custom CSV data, preprocessing, a simple
-  main-method few-shot baseline, the final main-method backbone checkpoint
-  (`main_method/best_backbone_CE_SupCon_Triplet.pth`), Apple resource files,
-  Apple training/source utilities, and DTW reference code.
+- Included now: full anonymized dataset (`data/`), firmware source
+  (`firmware/tflite-customer`), example preset/custom CSV data, preprocessing,
+  a simple main-method few-shot baseline, the final main-method backbone
+  checkpoint (`main_method/best_backbone_CE_SupCon_Triplet.pth`), Apple
+  resource files, Apple training/source utilities, and DTW reference code.
 - Not included now: full implementation source code and paper reproduction
   runners.
 - Planned after acceptance: complete source code for reproducible paper-level

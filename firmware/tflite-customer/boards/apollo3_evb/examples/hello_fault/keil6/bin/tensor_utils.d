@@ -1,0 +1,30 @@
+./bin/tensor_utils.o: \
+  E:\MDK5\pack\tensorflow\tensorflow-lite-micro\1.25.2\tensorflow\lite\core\api\tensor_utils.cpp \
+  RTE\_hello_fault\Pre_Include_Global.h \
+  E:\MDK5\pack\tensorflow\tensorflow-lite-micro\1.25.2\tensorflow\lite\core\api\tensor_utils.h \
+  E:\MDK5\pack\tensorflow\tensorflow-lite-micro\1.25.2\tensorflow\lite\core\c\common.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\stdbool.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\__nullptr \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  E:\MDK5\pack\tensorflow\tensorflow-lite-micro\1.25.2\tensorflow\lite\core\c\c_api_types.h \
+  E:\MDK5\pack\tensorflow\tensorflow-lite-micro\1.25.2\tensorflow\compiler\mlir\lite\core\c\tflite_types.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\utility \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\__tuple \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\initializer_list \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\cstring \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\string.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\cstdint \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\__debug \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\iosfwd \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\libcxx\wchar.h \
+  E:\MDK5\ARM\ARMCLANG\Bin\..\include\wchar.h

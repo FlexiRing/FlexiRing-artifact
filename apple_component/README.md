@@ -89,6 +89,18 @@ Default paths are configured in `apple_component/add_head/config.py`:
 
 For custom datasets, override paths via CLI flags (recommended) or update config values.
 
+For the full dataset bundled in this release, you can point scripts to:
+
+- `data/preset_gestures/all`
+- `data/custom_gestures`
+
+Example:
+
+```bash
+python apple_component/ModelTrain.py --data_dir data/preset_gestures/all --epochs 1 --batch_size 8 --num_workers 0 --skip_tsne --output_dir apple_component/outputs/modeltrain_smoke
+python apple_component/run_fixed_manifest_baselines.py --custom-data-root data/custom_gestures --shots 1 --max-epochs 1 --preset-limit 64 --artifact-root apple_component/outputs/fixed_manifest_smoke
+```
+
 ## Notes
 
 - This release is designed for smoke testing and interface validation, not full paper-level reproduction.

@@ -75,6 +75,13 @@ python main_method/preprocess_data.py --preset-csv-dir your_preset_data --custom
 python main_method/fewshot_demo.py --custom-root your_custom_data --user UserName --classes 0 1 --shots 5
 ```
 
+Use the full dataset bundled in this release:
+
+```bash
+python main_method/preprocess_data.py --preset-csv-dir data/preset_gestures/all --custom-csv-dir data/custom_gestures
+python main_method/fewshot_demo.py --custom-root data/custom_gestures --user P16_23_male --classes 0 1 2 3 --shots 5
+```
+
 Preprocessing writes:
 
 ```text
